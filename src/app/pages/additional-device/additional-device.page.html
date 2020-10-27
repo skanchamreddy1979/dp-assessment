@@ -1,7 +1,10 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
+      <ion-back-button
+        defaultHref="home"
+        icon="chevron-back-outline"
+      ></ion-back-button>
     </ion-buttons>
     <ion-title class="ion-text-center">Additional Devices</ion-title>
   </ion-toolbar>
@@ -72,6 +75,7 @@
   <ion-row>
     <ion-col offset="2" size="8">
       <ion-button
+        [routerLink]="['/units']"
         style="margin-top: 10px"
         expand="full"
         shape="round"
