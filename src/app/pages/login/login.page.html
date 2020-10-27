@@ -2,7 +2,10 @@
   <ion-toolbar>
     <ion-title class="ion-text-center">Welcome</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
+      <ion-back-button
+        defaultHref="login"
+        icon="chevron-back-outline"
+      ></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="end">
       <ion-button>
@@ -59,13 +62,23 @@
 
       <ion-row style="padding-top: 20%">
         <ion-col size-xs="10" offset="1">
-          <ion-button expand="block" color="medium">Login</ion-button>
+          <ion-button
+            expand="block"
+            color="medium"
+            [routerLink]="['/additional-device']"
+            >Login</ion-button
+          >
         </ion-col>
       </ion-row>
 
       <ion-row>
         <ion-col size-xs="10" offset="1">
-          <ion-button expand="block" color="light">Register</ion-button>
+          <ion-button
+            expand="block"
+            color="light"
+            [routerLink]="['/registration']"
+            >Register</ion-button
+          >
         </ion-col>
       </ion-row>
     </ion-grid>
