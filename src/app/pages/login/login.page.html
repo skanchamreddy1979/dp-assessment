@@ -1,9 +1,73 @@
-<ion-header>
+<ion-app>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title class="ion-text-center">Welcome</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="people"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
-</ion-header>
 
-<ion-content>
+  <ion-content>
+    <br />
+    <br />
 
-</ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-xs="4" offset="4">
+          <ion-img
+            src="https://upload.wikimedia.org/wikipedia/en/a/a6/GSK_logo_2014.svg"
+            alt="GSK img"
+          ></ion-img>
+        </ion-col>
+      </ion-row>
+
+      <ion-row size-xs="6" offset="3">
+        <ion-label style="width: 100%; text-align: center; padding-top: 2%"
+          >GlaxoSmithKline</ion-label
+        >
+      </ion-row>
+
+      <ion-row style="padding-top: 20%">
+        <ion-col size-xs="10" offset="1">
+          <ion-label>Your Email Adderss</ion-label>&nbsp;
+          <ion-icon
+            name="information-circle-outline"
+            class="info-icon"
+          ></ion-icon>
+          <ion-item class="roundedInput" style="padding-top: 10px">
+            <ion-input></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="padding-top: 5%">
+        <ion-col size-xs="10" offset="1">
+          <ion-label>Your Password</ion-label>&nbsp;
+          <ion-icon
+            name="information-circle-outline"
+            class="info-icon"
+          ></ion-icon>
+          <ion-item class="roundedInput" style="padding-top: 10px">
+            <ion-input></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="padding-top: 20%">
+        <ion-col size-xs="10" offset="1">
+          <ion-button expand="block" color="medium">Login</ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size-xs="10" offset="1">
+          <ion-button expand="block" color="light">Register</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>
