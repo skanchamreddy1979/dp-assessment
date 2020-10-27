@@ -1,0 +1,11 @@
+.avatar {
+  margin: auto;
+}
+.roundedInput {
+  --border-color: var(--ion-color-medium-shade);
+  --border-radius: 10px;
+  --border-width: 2px;
+  --box-shadow: 2px gray;
+  --highlight-height: 0;
+  --background: #ffffff;
+}
