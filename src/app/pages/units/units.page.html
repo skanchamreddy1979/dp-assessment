@@ -1,0 +1,77 @@
+<ion-app>
+  <ion-toolbar>
+    <ion-title style="text-align: center">Units and Languages</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row style="padding-top: 30%">
+        <ion-col size-xs="10" offset="1">
+          <ion-label>System of units</ion-label>&nbsp;
+          <ion-icon
+            name="information-circle-outline"
+            class="info-icon"
+          ></ion-icon>
+          <ion-radio-group value="grape">
+            <ion-list style="padding-top: 10px">
+              <ion-item class="rcorners">
+                <ion-label
+                  >International Units (cm / litre / kilogram)</ion-label
+                >
+                <ion-radio slot="start" color="success" value="int"></ion-radio>
+              </ion-item>
+              <br />
+              <ion-item class="rcorners">
+                <ion-label>Imperial units (inch / pint / pound)</ion-label>
+                <ion-radio slot="start" color="success" value="imp"></ion-radio>
+              </ion-item>
+              <br />
+              <ion-item class="rcorners">
+                <ion-label>US customery units (inch / pint / pound)</ion-label>
+                <ion-radio slot="start" color="success" value="usc"></ion-radio>
+              </ion-item>
+            </ion-list>
+            <br />
+          </ion-radio-group>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size-xs="10" offset="1">
+          <ion-label>Languages</ion-label>&nbsp;
+          <ion-icon
+            name="information-circle-outline"
+            class="info-icon"
+          ></ion-icon>
+          <ion-list style="padding-top: 10px">
+            <ion-item class="rcorners">
+              <ion-select value="eng" interface="popover">
+                <ion-select-option value="eng">English</ion-select-option>
+                <ion-select-option value="fre">French</ion-select-option>
+                <ion-select-option value="ger">German</ion-select-option>
+                <ion-select-option value="jpn">Japanese</ion-select-option>
+                <ion-select-option value="rsn">Russian</ion-select-option>
+                <ion-select-option value="chn">Chinese</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="padding-top: 20%">
+        <ion-col size-xs="10" offset="1">
+          <ion-button expand="block" color="medium">Save</ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size-xs="10" offset="1">
+          <ion-button expand="block" color="light">Skip</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

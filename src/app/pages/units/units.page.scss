@@ -1,0 +1,11 @@
+.rcorners {
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+
+:host {
+  ion-button {
+    --border-radius: 40px;
+    text-transform: none;
+  }
+}
