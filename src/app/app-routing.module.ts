@@ -27,6 +27,20 @@ const routes: Routes = [
     path: 'assessment',
     loadChildren: () => import('./pages/assessment/assessment.module').then(m => m.AssessmentPageModule)
   },
+  {
+    path: 'additional-device',
+    loadChildren: () => import('./pages/additional-device/additional-device.module').then(m => m.AdditionalDevicePageModule)
+  },
+  {
+    path: 'dynamic-theme-switchers',
+    loadChildren: () => import('./pages/dynamic-theme-switchers/dynamic-theme-switchers.module').
+      then(m => m.DynamicThemeSwitchersPageModule)
+  },
+  {
+    path: 'initial-security',
+    loadChildren: () => import('./pages/initial-security/initial-security.module').then(m => m.InitialSecurityPageModule)
+  },
+
 ];
 
 @NgModule({
