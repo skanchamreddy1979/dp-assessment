@@ -26,7 +26,15 @@ const routes: Routes = [
   {
     path: 'assessment',
     loadChildren: () => import('./pages/assessment/assessment.module').then(m => m.AssessmentPageModule)
+  },  {
+    path: 'loginext',
+    loadChildren: () => import('./pages/loginext/loginext/loginext.module').then( m => m.LoginextPageModule)
   },
+  {
+    path: 'accessibility',
+    loadChildren: () => import('./pages/accessibility/accessibility.module').then( m => m.AccessibilityPageModule)
+  },
+
 ];
 
 @NgModule({

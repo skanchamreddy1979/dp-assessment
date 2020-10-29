@@ -1,0 +1,35 @@
+.paddingclass {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.installPadding {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.installInsidePadding {
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.iconPadding {
+    padding-right: 0px;
+}
+
+.rcorners {
+    border-radius: 10px;
+    border: 2px solid gray;
+    width: 100%;
+}
+
+.paddingIonItem {
+    padding-top: 15px;
+}
+
+:host {
+    ion-button {
+        --border-radius: 40px;
+        text-transform: none;
+    }
+}

@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title class="ion-text-center">Welcome</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon slot="icon-only" name="people"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="paddingclass">
+        <img src="assets/Images/gskLogo.jpg">
+    </div>
+    <ion-row style="padding-top: 10%">
+        <ion-col size-xs="10" offset="1">
+            <ion-label>Install additional required apps</ion-label>&nbsp;
+            <ion-icon name="information-circle-outline" class="info-icon"></ion-icon>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col size-xs="10" offset="1">
+            <ion-item class="paddingIonItem" *ngFor="let d of diseases; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+                <div class="rcorners">
+                    <ion-icon name="chevron-down-outline" slot="start"></ion-icon>
+                    {{d.title}}
+                    <ion-icon class="iconPadding" name="cloud-download-outline" slot="end"></ion-icon>
+                    <div class="installPadding" *ngIf="isGroupShown(i)">{{d.description}}</div>
+                </div>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+    <ion-row style="padding-top: 10%">
+        <ion-col size-xs="10" offset="1">
+            <ion-button expand="block" color="medium">Save</ion-button>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col size-xs="10" offset="1">
+            <ion-button expand="block" color="light">Skip</ion-button>
+        </ion-col>
+    </ion-row>
+</ion-content>

@@ -1,0 +1,56 @@
+.btn-striped {
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    -moz-background-size: 40px 40px;
+    -o-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+
+.btn-striped.active {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -moz-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+}
+
+.btn:active {
+    background-color: yellow;
+}
+
+.btn.active {
+    color: #333;
+    background-color: red;
+}
+
+mat-button-toggle {
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 45px;
+    height: 45px;
+    background-color: whitesmoke;
+    color: gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mat-button-toggle-checked {
+    border: 1px solid #c5c0c7;
+    background-color: black;
+}
+
+small {
+    display: block;
+    text-align: center;
+}
+
+.button1CSS {
+    background-color: whitesmoke;
+}
+
+.button2css {}
